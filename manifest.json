@@ -1,0 +1,41 @@
+{
+    "name": "Tere - Eco-Friendly Ride Sharing",
+    "short_name": "Tere",
+    "description": "Save money, make friends, reduce carbon footprint with Tere ride-sharing app",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#75BF7A",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./assets/images/logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./assets/images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./assets/images/banner.png",
+            "sizes": "540x720",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["travel", "productivity"],
+    "shortcuts": [
+        {
+            "name": "Book a Ride",
+            "short_name": "Book Ride",
+            "description": "Quickly book your next ride",
+            "url": "/?action=book",
+            "icons": [{"src": "./assets/images/logo.png", "sizes": "192x192"}]
+        }
+    ]
+}

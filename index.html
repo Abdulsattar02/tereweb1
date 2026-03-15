@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tere - Eco-friendly ride-sharing app. Save money, make friends, reduce carbon footprint. Download now on iOS & Android.">
+    <meta name="keywords" content="ride-sharing, carpool, eco-friendly, Tere app, save money, reduce carbon">
+    <meta name="author" content="Tere by Codematics">
+    <meta property="og:title" content="Tere - Ride Sharing App">
+    <meta property="og:description" content="Download app, save money, make friends! Join 50K+ riders in eco-friendly ride-sharing.">
+    <meta property="og:image" content="./assets/images/logo.png">
+    <meta property="og:url" content="https://tere.com">
+    <meta name="theme-color" content="#75BF7A">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Tere",
+        "description": "Eco-friendly ride-sharing application",
+        "url": "https://tere.com",
+        "applicationCategory": "MobileApplication",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "12500"}
+    }
+    </script>
+
+    <title>Tere - Ride Sharing App | Save Money & Reduce Carbon Footprint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ussd-style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="./assets/images/logo.png">
+</head>
+
+<body>
+    <!-- Sticky CTA Button -->
+    <div class="sticky-cta" id="stickyCTA">
+        <a href="#" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Now
+        </a>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Tere Logo">
+            </div>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#stats" class="nav-link">Why Tere</a>
+                <a href="#howTereWorks" class="nav-link">How It Works</a>
+                <a href="#safety" class="nav-link">Safety</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero-slider" data-aos="fade-up">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</h1>
+                        <p>Join 50K+ riders. Save up to 60% on commute costs. Reduce your carbon footprint. It's simple, free, and eco-friendly.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <img src="./assets/images/play_store.png" alt="Play Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <img src="./assets/images/app_store.png" alt="App Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/images/banner.png" alt="Tere App">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>RIDE TOGETHER, SAVE TOGETHER!</h1>
+                        <p>Join thousands of riders in your area. Share rides, save money, and make new friends while helping the environment.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <img src="./assets/images/play_store.png" alt="Play Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <img src="./assets/images/app_store.png" alt="App Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/images/banner.png" alt="Tere App">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>GO GREEN, RIDE SMART!</h1>
+                        <p>Reduce your carbon footprint. Every ride counts towards a cleaner, greener future for our planet.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <img src="./assets/images/play_store.png" alt="Play Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <img src="./assets/images/app_store.png" alt="App Store">
+                                <span>DOWNLOAD</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/images/banner.png" alt="Tere App">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- How Tere Works Section (Enhanced) -->
+    <section id="howTereWorks" class="how-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>HOW <span class="highlight">TERE</span> WORKS</h2>
+                <p>4 Simple Steps to Start Saving</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="step-number">1</div>
+                    <div class="step-image">
+                        <img src="./assets/images/1.png.png" alt="Download App">
+                    </div>
+                    <h3>Download App</h3>
+                    <p>Get the app from Play Store or App Store</p>
+                </div>
+                <div class="step-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-image">
+                        <img src="./assets/images/2.png.png" alt="Create Account">
+                    </div>
+                    <h3>Create Account</h3>
+                    <p>Sign up with your phone number</p>
+                </div>
+                <div class="step-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-image">
+                        <img src="./assets/images/3.png.png" alt="Request a Ride">
+                    </div>
+                    <h3>Request a Ride</h3>
+                    <p>Enter pickup and drop location</p>
+                </div>
+                <div class="step-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-image">
+                        <img src="./assets/images/4.png.png" alt="Enjoy Your Ride">
+                    </div>
+                    <h3>Enjoy Your Ride</h3>
+                    <p>Meet friendly riders and save money</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Security Section -->
+    <section id="safety" class="safety-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>YOUR <span class="highlight">SAFETY</span> MATTERS</h2>
+                <p>Protected by layered security and verified community</p>
+            </div>
+            <div class="safety-features">
+                <div class="safety-card" data-aos="fade-left">
+                    <div class="safety-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Drivers</h3>
+                    <p>All drivers are background verified and rated by our community</p>
+                </div>
+                <div class="safety-card" data-aos="fade-left" data-aos-delay="100">
+                    <div class="safety-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Share your ride details with emergency contacts in real-time</p>
+                </div>
+                <div class="safety-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="safety-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Emergency Button</h3>
+                    <p>One-tap emergency alert in case of any issue</p>
+                </div>
+                <div class="safety-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="safety-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Data Protection</h3>
+                    <p>SSL encrypted • PCI-DSS compliant • Your data is secure</p>
+                </div>
+            </div>
+
+            <!-- Security Badges -->
+            <div class="security-badges" data-aos="zoom-in">
+                <div class="security-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>SSL Verified</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified Users</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Insurance Covered</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Driver Rating System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fare Estimator Section -->
+    <section class="fare-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Estimate Your Ride Fare</h2>
+                <p>Enter the distance to calculate your estimated fare</p>
+            </div>
+            <div class="fare-calculator">
+                <div class="fare-input-group">
+                    <input type="number" id="distance" placeholder="Distance in KM" min="1">
+                    <button onclick="calculateFare()" class="btn btn-primary">Estimate Fare</button>
+                </div>
+                <div id="fareResult" class="fare-result"></div>
+                <button id="whatsappButton" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Book Ride on WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>SECURE <span class="highlight">PAYMENT</span> OPTIONS</h2>
+                <p>Multiple payment methods for your convenience</p>
+            </div>
+            <div class="payment-methods">
+                <div class="payment-icon">VISA</div>
+                <div class="payment-icon">Mastercard</div>
+                <div class="payment-icon">M-Pesa</div>
+                <div class="payment-icon">Airtel Money</div>
+                <div class="payment-icon">Bank Transfer</div>
+                <div class="payment-icon">Digital Wallet</div>
+            </div>
+            <div class="payment-badges" data-aos="zoom-in">
+                <div class="payment-badge">🔒 PCI-DSS Compliant</div>
+                <div class="payment-badge">🔐 SSL Encrypted</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="faq-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>FREQUENTLY <span class="highlight">ASKED QUESTIONS</span></h2>
+                <p>Find answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>How do I book a ride?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Download the Tere app, create an account, enter your pickup and drop location, and request a ride. It's that simple!</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit/debit cards, M-Pesa, Airtel Money, bank transfers, and our digital wallet.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Are all drivers verified and safe?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All drivers undergo background verification and are rated by our community. You can also track your ride in real-time.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <h3>What if I need to cancel my ride?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel free of charge up to 2 minutes before the ride starts. After that, a small cancellation fee applies.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>How do I become a driver?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click "Apply to Drive" below and complete the verification process. You'll need a valid license and vehicle documents.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <h3>What about my data security?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your data is encrypted end-to-end and we comply with international data protection standards. Your privacy is our priority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-section" data-aos="zoom-in">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Don't Miss Out!</h2>
+                <p>Get exclusive offers, app updates, and tips to save more on every ride</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div id="newsletterMsg" class="newsletter-msg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply to Drive Section -->
+    <section class="apply-section" data-aos="fade-up">
+        <div class="container">
+            <div class="apply-content">
+                <div class="apply-text">
+                    <h2>Ready to Earn?</h2>
+                    <p>Join our driver community and start earning on your schedule. Flexible hours. Great earnings. No hassle.</p>
+                </div>
+                <form class="apply-form" onsubmit="handleDriverApplication(event)">
+                    <input type="tel" placeholder="Enter mobile number" required>
+                    <button type="submit" class="btn btn-apply">APPLY TO DRIVE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Rider Count & Community -->
+    <section class="community-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>JOIN OUR <span class="highlight">COMMUNITY</span></h2>
+                <p>You're never alone on Tere</p>
+            </div>
+            <div class="community-info">
+                <div class="rider-count">
+                    <h3 id="liveRiderCount">1,234</h3>
+                    <p>Riders Online Now</p>
+                </div>
+                <div class="community-stats">
+                    <p>📍 Available in <strong>5+ cities</strong></p>
+                    <p>👥 <strong>50K+ registered users</strong></p>
+                    <p>⭐ <strong>4.8★ average rating</strong></p>
+                    <p>🌍 <strong>Growing every day</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Happy Customers - Before Footer) -->
+    <section class="testimonials-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="highlight">TERE</span> BENEFITS</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-header">
+                        <div class="avatar-placeholder">SA</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Ahmed</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"Tere has saved me Rs. 2000 every month! Plus, I've made amazing friends on my daily commute."</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="avatar-placeholder">AH</div>
+                        <div class="testimonial-info">
+                            <h4>Ali Hassan</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"The app is so easy to use. Support team responds instantly. Best ride-sharing experience!"</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="avatar-placeholder">FK</div>
+                        <div class="testimonial-info">
+                            <h4>Fatima Khan</h4>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"I'm doing my part for the environment while saving money. Win-win for everyone!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./assets/images/logo.png" alt="Tere Logo">
+                    </div>
+                    <p>Making commuting eco-friendly, affordable, and fun.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#howTereWorks">How It Works</a></li>
+                        <li><a href="#safety">Safety</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/tereapp" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/tereapp" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/tereapp" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/tereapp" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://tiktok.com/@tereapp" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/tereapp" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Download</h3>
+                    <div class="footer-downloads">
+                        <a href="#" class="btn btn-download">
+                            <i class="fab fa-google-play"></i> Play Store
+                        </a>
+                        <a href="#" class="btn btn-download">
+                            <i class="fab fa-app-store"></i> App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tere by Codematics. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for the Planet | Developed by Abdul Sattar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places,directions,distancematrix"></script>
+
+    <!-- Animations Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(registration => console.log('Service Worker registered'))
+                .catch(error => console.log('Service Worker registration failed:', error));
+        }
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
